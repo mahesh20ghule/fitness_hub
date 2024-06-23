@@ -1,0 +1,270 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class plans_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.Vector _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public Object getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html; charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write('\n');
+ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); 
+      out.write('\n');
+ response.setHeader("Pragma", "no-cache"); 
+      out.write('\n');
+ response.setDateHeader("Expires", 0); 
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("<head>\n");
+      out.write("    <meta charset=\"UTF-8\">\n");
+      out.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+      out.write("    <title>Login - Fitness-Hub</title>\n");
+      out.write("    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\">\n");
+      out.write("    <!-- Add your custom styles here -->\n");
+      out.write("    <style>\n");
+      out.write("        body {\n");
+      out.write("            font-family: 'Arial', sans-serif;\n");
+      out.write("            background-color: #f5f5f5;\n");
+      out.write("        }\n");
+      out.write("\n");
+      out.write("        .container {\n");
+      out.write("            max-width: 400px;\n");
+      out.write("            margin: 100px auto;\n");
+      out.write("        }\n");
+      out.write("\n");
+      out.write("        form {\n");
+      out.write("            background-color: #fff;\n");
+      out.write("            padding: 20px;\n");
+      out.write("            border-radius: 5px;\n");
+      out.write("            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n");
+      out.write("        }\n");
+      out.write("\n");
+      out.write("        .form-group {\n");
+      out.write("            margin-bottom: 20px;\n");
+      out.write("        }\n");
+      out.write("\n");
+      out.write("        .btn-login {\n");
+      out.write("            background-color: #333;\n");
+      out.write("            color: #fff;\n");
+      out.write("        }\n");
+      out.write("        header {\n");
+      out.write("  background-color: #333;\n");
+      out.write("  color: #fff;\n");
+      out.write("  padding: 20px;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("/*.navbar {\n");
+      out.write("  display: flex;\n");
+      out.write("  justify-content: space-between;\n");
+      out.write("  align-items: left;\n");
+      out.write("}*/\n");
+      out.write("\n");
+      out.write(".logo h1 {\n");
+      out.write("  font-size: 24px;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".navbar {\n");
+      out.write("  display: flex;\n");
+      out.write("  justify-content: space-between;\n");
+      out.write("  align-items: center;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".nav-links {\n");
+      out.write("  list-style: none;\n");
+      out.write("  display: flex;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".nav-links li {\n");
+      out.write("  margin-right: 20px;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".hero {\n");
+      out.write("  text-align: center;\n");
+      out.write("  padding: 100px 0;\n");
+      out.write("  background-color: #fff;\n");
+      out.write("  color: #333;\n");
+      out.write("  height: 700px;\n");
+      out.write("}\n");
+      out.write(".imgc{\n");
+      out.write("  background-image: url('Images/Adds1.jpg');\n");
+      out.write("  background-size: cover;\n");
+      out.write("  background-repeat: no-repeat;\n");
+      out.write("   position: relative;\n");
+      out.write("}\n");
+      out.write(".hero-content {\n");
+      out.write("  max-width: 800px;\n");
+      out.write("  margin: 0 auto;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".btn {\n");
+      out.write("  display: inline-block;\n");
+      out.write("  padding: 10px 20px;\n");
+      out.write("  background-color: #333;\n");
+      out.write("  color: #fff;\n");
+      out.write("  text-decoration: none;\n");
+      out.write("  border-radius: 5px;\n");
+      out.write("  transition: background-color 0.3s ease;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".btn:hover {\n");
+      out.write("  background-color: #555;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".services {\n");
+      out.write("  text-align: center;\n");
+      out.write("  padding: 50px 0;\n");
+      out.write("  \n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".service-cards {\n");
+      out.write("  display: flex;\n");
+      out.write("  justify-content: center;\n");
+      out.write("  align-items: center;\n");
+      out.write("  flex-wrap: wrap;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".service-item {\n");
+      out.write("  width: 300px;\n");
+      out.write("  margin: 20px;\n");
+      out.write("  padding: 20px;\n");
+      out.write("  background-color: #f9f9f9;\n");
+      out.write("  border-radius: 5px;\n");
+      out.write("  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n");
+      out.write("}\n");
+      out.write(".nav-links li a {\n");
+      out.write("  color: #fff;\n");
+      out.write("  text-decoration: none;\n");
+      out.write("  transition: color 0.3s ease;\n");
+      out.write("   float:center;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".nav-links li a:hover {\n");
+      out.write("  color: #ffcc00;\n");
+      out.write("  max-width: 100%;\n");
+      out.write("  height: auto;\n");
+      out.write("  opacity: 0.7;\n");
+      out.write("}\n");
+      out.write(".dropbtn {\n");
+      out.write("  color: #fff;\n");
+      out.write("  text-decoration: none;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".dropdown-content {\n");
+      out.write("  display: none;\n");
+      out.write("  position: absolute;\n");
+      out.write("  background-color: #f9f9f9;\n");
+      out.write("  min-width: 160px;\n");
+      out.write("  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n");
+      out.write("  z-index: 1;\n");
+      out.write("}\n");
+      out.write(".dropdown-content a {\n");
+      out.write("  color: #333;\n");
+      out.write("  padding: 12px 16px;\n");
+      out.write("  text-decoration: none;\n");
+      out.write("  display: block;\n");
+      out.write("  background-color: grey;\n");
+      out.write("}\n");
+      out.write(".dropdown-content a:hover {\n");
+      out.write("  background-color: #555;\n");
+      out.write("  color: #fff;\n");
+      out.write("}\n");
+      out.write(".dropdown:hover .dropdown-content {\n");
+      out.write("  display: block;\n");
+      out.write("}\n");
+      out.write("    </style>\n");
+      out.write("</head>\n");
+      out.write("<body class=\"imgc\">\n");
+      out.write("    <header>\n");
+      out.write("        <nav class=\"navbar\" >\n");
+      out.write("          <div class=\"logo\">\n");
+      out.write("            <h1>Fitness-Hub</h1>\n");
+      out.write("          </div>\n");
+      out.write("          <ul class=\"nav-links\" style=\" padding-right: 90px;\">\n");
+      out.write("              <li><a href=\"index.jsp\"style=\"\">Home</a></li>\n");
+      out.write("            <li class=\"dropdown\">\n");
+      out.write("              <a href=\"Macro.jsp\" class=\"dropbtn\">Macro Calculator</a>\n");
+      out.write("            </li>\n");
+      out.write("             <li><a href=\"index.jsp\">About us</a></li>\n");
+      out.write("             <li class=\"dropdown\">\n");
+      out.write("             <a href=\"index.jsp\" class=\"dropbtn\">Contact us</a>\n");
+      out.write("</li>\n");
+      out.write("\n");
+      out.write("          </ul>\n");
+      out.write("            <ul class=\"nav-links\">\n");
+      out.write("                <li class=\"dropdown\"><a href=\"login.jsp\">Log In</a></li>\n");
+      out.write("            </ul>\n");
+      out.write("  </div>\n");
+      out.write("          \n");
+      out.write("        </nav>\n");
+      out.write("      </header>\n");
+      out.write("    <!-- Plans Section -->\n");
+      out.write("    <section class=\"services\" style=\"margin-top:200px;\">\n");
+      out.write("        <h2 style=\"color:white;\">Our Plans</h2>\n");
+      out.write("        <div class=\"service-cards\">\n");
+      out.write("            <div class=\"service-item\" style=\"height:150px;\">\n");
+      out.write("            <h3>Beginner plans</h3>\n");
+      out.write("            <p>Get started with our basic plan, suitable for beginners.</p>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"service-item\" style=\"height:150px;\">\n");
+      out.write("            <h3>Weight loss plans</h3>\n");
+      out.write("            <p>Loss weight with our best trainers.</p>\n");
+      out.write("            \n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"service-item\" style=\"height:150px;\">\n");
+      out.write("            <h3>Weight Gaining plans</h3>\n");
+      out.write("            <p>For those who are serious about gaining weight.</p>\n");
+      out.write("        </div>\n");
+      out.write("    </div>\n");
+      out.write("</section>\n");
+      out.write("\n");
+      out.write("</body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
